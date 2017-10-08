@@ -1,0 +1,9 @@
+body {
+  max-width: 1280px;
+  /* Move down content because we have a fixed navbar that is 3.5rem tall */
+  padding-top: 3.5rem;
+}
+
+.container {
+  max-width: 1280px;
+}
