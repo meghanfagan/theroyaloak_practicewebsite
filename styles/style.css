@@ -33,6 +33,10 @@ h3 {
   color: #285237;
 }
 
+.thanksh3 {
+  margin-top: 1.5em;
+}
+
 h4 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
@@ -165,7 +169,7 @@ h4 {
 
 .col-lg-6 pl-lg-0 d-inline-block text-center {
   margin: 0;
-  padading: 0;
+  padding: 0;
 }
 
 .subtext p {
@@ -270,7 +274,26 @@ a.skip-main:focus, a.skip-main:active {
   color: #130B02;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
-  margin-bottom:1em;
+}
+
+label {
+  font-weight: 900;
+  color: #2E1218;
+}
+
+.required {
+  color: red;
+}
+
+.requiredtext {
+  color: red;
+  font-size: .8em;
+  font-weight: 600;
+}
+
+.submitbutton {
+  background-color: #285237;
+  color: #F2D6A2;
 }
 
 /* Media Queries */
@@ -281,15 +304,21 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 @media screen and (max-width: 768px) {
-  .secondaryjumbotron {
+  .secondaryjumbotron, .contactjumbotron {
     background-image: none;
     background-color: #2E1218;
   }
-  .secondaryjumbotronh1 {
+  .secondaryjumbotronh1, .contactjumbotronh1 {
     color: #EDEDED;
   }
   .divwithborder {
     border-right: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contactjumbotron {
+    display: none;
   }
 }
 

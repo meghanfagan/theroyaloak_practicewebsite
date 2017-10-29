@@ -45,6 +45,10 @@ h3 {
 	color: $dark-green;
 }
 
+.thanksh3 {
+	margin-top: 1.5em;
+}
+
 h4 {
 	font-family: $helvetica-neue;
 	font-size:1.2em;
@@ -270,6 +274,25 @@ a.skip-main:focus, a.skip-main:active {
 	font-weight: 900;
 }
 
+label {
+	font-weight: 900;
+	color: $dark-red;
+}
+
+.required {
+	color: red;
+}
+	
+.requiredtext {
+	color: red;
+	font-size: .8em;
+	font-weight: 600;
+}
+
+.submitbutton {
+	background-color: $dark-green;
+	color: $tan;
+}
 
 
 /* Media Queries */
@@ -280,17 +303,23 @@ a.skip-main:focus, a.skip-main:active {
 }
 
 @media screen and (max-width: 768px) {
-	.secondaryjumbotron {	
+	.secondaryjumbotron, .contactjumbotron {	
 		background-image: none;
 		background-color: $dark-red;
 	}
 	
-	.secondaryjumbotronh1 {
+	.secondaryjumbotronh1, .contactjumbotronh1 {
 		color: $light-gray;
 	}
 	
 	.divwithborder {
 		border-right: none;
+	}
+}
+
+@media screen and (min-width: 769px) {	
+	.contactjumbotron {
+		display:none;
 	}
 }
 
